@@ -10,6 +10,15 @@
 
 This bundle simplifies the setup of the ADR in a Symfony 3.4 project.
 
+## Versions
+
+- [1.x version](https://github.com/Berenger/AdrBundle/tree/1.x)
+  stable version. Recommended for all projects using Symfony 3.4;
+- [2.x version](https://github.com/Berenger/AdrBundle/tree/2.x)
+  stable version. Recommended for all projects using Symfony 4.4;
+- [3.x version](https://github.com/Berenger/AdrBundle/tree/master)
+  stable version. Recommended for all projects using Symfony 5.0 or newer;
+
 ## Prerequisites
 
 - PHP : version 7.2 minimum
