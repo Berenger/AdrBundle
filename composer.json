@@ -1,5 +1,5 @@
 {
-  "name": "berenger/AdrBundle",
+  "name": "berenger/adr-bundle",
   "description": "This bundle simplifies the setup of the ADR in a Symfony project.",
   "type": "symfony-bundle",
   "keywords": [
