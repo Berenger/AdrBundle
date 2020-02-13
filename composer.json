@@ -1,0 +1,20 @@
+{
+  "name": "berenger/AdrBundle",
+  "description": "This bundle simplifies the setup of the ADR in a Symfony project.",
+  "type": "symfony-bundle",
+  "keywords": [
+    "Adr",
+    "Symfony"
+  ],
+  "homepage": "https://github.com/berenger/AdrBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Berenger VIDAL",
+      "email": "berenger.vidal@hotmail.fr"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0"
+  }
+}
