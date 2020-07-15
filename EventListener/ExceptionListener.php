@@ -64,7 +64,7 @@ class ExceptionListener implements EventSubscriberInterface
         }
 
         $event->allowCustomResponseCode();
-        $exception = $event->getException();
+        $exception = $event->getThrowable();
         $message = $exception->getMessage();
         if ($exception instanceof HttpExceptionInterface) {
             $statusCode = $exception->getStatusCode();
