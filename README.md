@@ -32,19 +32,6 @@ This bundle simplifies the setup of the ADR in a Symfony 5.0 project.
   composer require berenger/adr-bundle:^3.0
 ```
 
-### Add bundle to config
-
-update the file : config/bundles.php
-
-```php
-<?php
-
-return [
-    ...
-    AdrBundle\AdrBundle::class => ['all' => true],
-    ...
-];
-```
 
 ### Add Cor identifier
 
@@ -111,11 +98,10 @@ namespace App\Controller;
 
 use App\Entity\Post;
 use Doctrine\ORM\EntityNotFoundException;
-use Symfony\Component\HttpFoundation\Request;
 
 class ViewPostAction
 {
-    public function __invoke(int $id, Request $request)
+    public function __invoke(int $id)
     {
         $postRepository = $this->getDoctrine()->getRepository(Post::class);
         $post = $postRepository->findOneById($id);
@@ -144,7 +130,7 @@ The responder can either:
 namespace App\Responder;
 
 
-use AppBundle\Entity\Post;
+use App\Entity\Post;
 
 class ViewPostResponder
 {
@@ -167,7 +153,7 @@ class ViewPostResponder
 ### Exemple of entity
 
 ```php
-namespace AppBundle\Entity;
+namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
